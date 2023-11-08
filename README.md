@@ -73,13 +73,27 @@ The dataset analyzes past loan applicants and their loan repayment behavior to i
 - Header & Footer Rows - No header or footer rows in the dataset
 - Extra Rows - No column number, indicators etc. found in the dataset
 - Find duplicate rows in the dataset and drop if there are
+- Row Cleaning
+    Delete summary row if any
+    delete incorrect row
+    delete empty row
+    delete incorrect row
+- Columns Cleaning
+    Merge columns for creating unique identifiers if needed
+    Split columns for more data: Split address to get State and City to analyse each separately
+    Add column names: Add column names if missing
+    Rename columns consistently: Abbreviations, encoded columns
+    Delete columns: Delete unnecessary columns
+    Align misaligned columns: Dataset may have shifted columns
 
 
 ### Columns Analysis of the Dataset
 
 #### Drop Columns 
-- There are multiple columns with **NA values** only. The **columns will be dropped**. 
+
+- Delete the Loan columns containing only null values **NA values** only. The **columns will be dropped**. 
     - `(next_pymnt_d, mths_since_last_major_derog, annual_inc_joint, dti_joint, verification_status_joint, tot_coll_amt, tot_cur_bal, open_acc_6m, open_il_6m, open_il_12m, open_il_24m, mths_since_rcnt_il, total_bal_il, il_util, open_rv_12m, open_rv_24m, max_bal_bc, all_util, total_rev_hi_lim, inq_fi, total_cu_tl, inq_last_12m, acc_open_past_24mths, avg_cur_bal, bc_open_to_buy, bc_util, mo_sin_old_il_acct, mo_sin_old_rev_tl_op, mo_sin_rcnt_rev_tl_op, mo_sin_rcnt_tl, mort_acc, mths_since_recent_bc, mths_since_recent_bc_dlq, mths_since_recent_inq, mths_since_recent_revol_delinq, num_accts_ever_120_pd, num_actv_bc_tl, num_actv_rev_tl, num_bc_sats, num_bc_tl, num_il_tl, num_op_rev_tl, num_rev_accts, num_rev_tl_bal_gt_0, num_sats, num_tl_120dpd_2m, num_tl_30dpd, num_tl_90g_dpd_24m, num_tl_op_past_12m, pct_tl_nvr_dlq, percent_bc_gt_75, tot_hi_cred_lim, total_bal_ex_mort, total_bc_limit, total_il_high_credit_limit)`
+    
 - There are multiple columns where the **values are only zero**, the **columns will be dropped**
 - There are columns where the **values are constant**. They dont contribute to the analysis, **columns will be dropped**
 - There are columns where the **value is constant but the other values are NA**. The column will be considered as constant. **columns will be dropped**
@@ -147,3 +161,6 @@ The dataset analyzes past loan applicants and their loan repayment behavior to i
 - [Jupyter Notebook - Version 3.3.2]()
 - [JupyterLab - Version 6.4.11]()
 - [Anaconda - Version 2.1.4]()
+## Team
+- Kshitiz Jaiswal
+- Senbagam
