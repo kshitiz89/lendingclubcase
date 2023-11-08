@@ -5,8 +5,6 @@
 * [Objectives](#objectives)
 * [Dataset Analysis](#dataset-analysis)
 * [Approach](#approach)
-* [Case Study Analysis](#case-study-analysis)
-* [Conclusions](#conclusions)
 * [Technologies Used](#technologies-used)
 * [Acknowledgements](#acknowledgements)
 * [Glossary](#glossary)
