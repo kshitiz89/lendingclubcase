@@ -157,7 +157,6 @@ The dataset analyzes past loan applicants and their loan repayment behavior to i
 - [matplotlib - Version 3.5.1](https://github.com/matplotlib)
 - [seaborn - Version 0.11.2](https://github.com/seaborn)
 - [Jupyter Notebook - Version 3.3.2]()
-- [JupyterLab - Version 6.4.11]()
 - [Anaconda - Version 2.1.4]()
 ## Team
 - Kshitiz Jaiswal
