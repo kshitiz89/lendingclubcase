@@ -116,7 +116,7 @@ The dataset analyzes past loan applicants and their loan repayment behavior to i
 #### Convert Column Values
 - `loan_status` column converted to boolean **Charged Off = False and Fully Paid = True**. This converts the column into ordinal values
 - `emp_length` converted to integer with following logic. Note < 1 year is converted to zero and 10+ converted to 10.
-    - < 1 year: 0,  
+    - < 1 year:0.5,  
     - 2 years: 2,  
     - 3 years: 3,  
     - 7 years: 7,  
